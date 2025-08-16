@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Tiara ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Slide Container -->
+    <div class="slide active" id="slide1">
+      <h1>🎉 Selamat Ulang Tahun Tiara Agustina 🎉</h1>
+      <p>Hari ini spesial banget, tapi jangan buru-buru ngambek ya 😜</p>
+    </div>
+
+    <div class="slide" id="slide2">
+      <h1>🙃 Moodyan Mode ON</h1>
+      <p>Tiara tuh kadang romantis, kadang moody... kadang manis, kadang bikin kesel 🤭</p>
+    </div>
+
+    <div class="slide" id="slide3">
+      <h1>🤔 Mini Quiz Time!</h1>
+      <p>Apa hobi favorit Tiara kalau lagi ngambek?</p>
+      <div class="options">
+        <button onclick="checkAnswer(this, false)">😴 Tidur seharian</button>
+        <button onclick="checkAnswer(this, true)">🍫 Makan coklat biar mood balik</button>
+        <button onclick="checkAnswer(this, false)">🙄 Ngambek sampe besok</button>
+      </div>
+      <p id="quiz-feedback"></p>
+    </div>
+
+    <div class="slide" id="slide4">
+      <h1>🎁 Pilih Kado Spesial</h1>
+      <p>Kamu berhasil, Tiara! Sekarang pilih kadomu 😘</p>
+      <div class="gifts">
+        <button onclick="showGift('Boneka imut, biar kamu nggak ngambek lagi 🧸')">🧸 Boneka</button>
+        <button onclick="showGift('Coklat manis, biar mood kamu ga rusak 🍫')">🍫 Coklat</button>
+        <button onclick="showGift('Cermin, biar sadar kalau lagi ngambek tetap cantik 😍')">🪞 Cermin</button>
+        <button onclick="showGift('Buku Diary, biar semua drama bisa ditulis 📖')">📖 Diary</button>
+      </div>
+      <p id="gift-message"></p>
+    </div>
+
+    <div class="slide" id="slide5">
+      <h1>💖 Happy Birthday Tiara 💖</h1>
+      <p>Semoga tambah dewasa (meski tetep suka ngambek 🤭), makin cantik, makin bahagia.  
+         Kamu itu unik, ngeselin, tapi selalu bikin kangen.  
+         Jangan sering-sering moody ya... nanti aku yang pusing 😜</p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

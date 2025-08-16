@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+#app {
+  width: 90%;
+  max-width: 600px;
+}
+
+.slide {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.slide.active {
+  display: flex;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #b0005a;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 12px;
+  background: #ff5f9e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff2f7d;
+  transform: scale(1.1);
+}
+
+.gifts button {
+  display: inline-block;
+}
+
+#gift-message {
+  margin-top: 15px;
+  font-style: italic;
+  color: #333;
+  background: rgba(255,255,255,0.6);
+  padding: 10px;
+  border-radius: 10px;
+}
